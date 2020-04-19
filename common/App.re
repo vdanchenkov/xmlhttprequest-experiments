@@ -29,11 +29,6 @@ let make = (props: props): React.element => {
   let content = React.createElement(component, pageProps);
 
   switch (router.route) {
-  | "/examples" =>
-    <MainLayout>
-      <h1 className="font-bold"> "Examples Section"->s </h1>
-      <div> content </div>
-    </MainLayout>
   | _ => <MainLayout> content </MainLayout>
   };
 };
